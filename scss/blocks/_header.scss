@@ -29,6 +29,8 @@
 					box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
 					border-radius: 20px;
 
+					z-index: 50;
+
 					&__list {
 						display: flex;
 						flex-direction: column;
@@ -55,6 +57,8 @@
 
 					box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
 					border-radius: 20px;
+
+					z-index: 50;
 
 					&__list {
 						display: flex;
@@ -121,6 +125,10 @@
 				text-align: center;
 			}
 		}
+	}
+
+	&__img {
+		display: none;
 	}
 
 	&__rigth {
@@ -198,27 +206,26 @@
 		top: 0;
 		left: 0;
 
-		// display: none;
+		transform: translateY(-4000px);
 		width: 100%;
 		height: 100vh;
 
-		z-index: 1050;
+		z-index: 100;
 		overflow: hidden;
+		transition: all 0.5s ease-in;
 
-		background-color: linear-gradient(
-			0deg,
-			rgba(0, 0, 0, 0.2),
-			rgba(0, 0, 0, 0.2)
-		);
+		background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
+
 		&__dialog {
-			position: absolute;
-			top: 208px;
-			left: 425px;
-			right: 425px;
+			position: relative;
+			margin: 0 auto;
+			margin-top: 208px;
 
 			max-width: 590px;
 			width: 100%;
-			
+			padding: 40px 32px;
+
+			background: #fff;
 			box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.1);
 			border-radius: 20px;
 		}
@@ -242,7 +249,251 @@
 		}
 		&__close {
 			position: absolute;
+			top: 42px;
+			right: 24px;
+		}
+
+		.form {
+			margin-top: 22px;
+
+			display: flex;
+			flex-direction: column;
+
+			&-email__input {
+				width: 100%;
+				padding: 18px 0 18px 30px;
+				border: 1.5px solid #e5e7ea;
+				outline-color: #299764;
+				border-radius: 82px;
+
+				@include mainText($MontserratMed, normal, 500, 18px, 22px);
+
+				color: #555555;
+			}
+
+			&-password {
+				margin-top: 16px;
+				position: relative;
+				&__input {
+					width: 100%;
+					padding: 18px 18px 18px 30px;
+					border: 1.5px solid #e5e7ea;
+					outline-color: #299764;
+					border-radius: 82px;
+
+					@include mainText($MontserratMed, normal, 500, 18px, 22px);
+
+					color: #555555;
+				}
+				&__img {
+					position: absolute;
+					top: 18px;
+					right: 30px;
+				}
+
+				&__reset {
+					margin-top: 8px;
+
+					@include mainText($MontserratMed, normal, 500, 14px, 17px);
+					text-align: end;
+
+					color: #555555;
+				}
+			}
+			&__accaunt {
+				margin-top: 26px;
+
+				@include mainText($MontserratMed, normal, 500, 16px, 20px);
+				text-align: center;
+				color: #000000;
+			}
+
+			&__button {
+				position: relative;
+
+				margin-top: 32px;
+				padding: 18px 0px;
+
+				background: #299764;
+				border-radius: 100px;
+
+				@include mainText($MontserratMed, normal, 500, 18px, 22px);
+				text-align: center;
+				color: #ffffff;
+
+				border: 1px solid transparent;
+
+				.form__login {
+					&::after {
+						position: absolute;
+						content: "";
+						background-image: url("../../assets/images/logo/Login.svg");
+						top: 18px;
+						right: 205px;
+						width: 22px;
+						height: 22px;
+					}
+				}
+			}
+		}
+	}
+
+	.mobile {
+        
+		position: fixed;
+		top: 0;
+		left: 0;
+
+		max-width: 100%;
+		width: 100%;
+		height: 100vh;
+
+        transform: translateX(9000px);
+
+		background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
+		overflow: hidden;
+        transition: all 0.6s ease-in;
+
+		&__content {
+			max-width: 475px;
+			padding: 33px 30px;
+			width: 100%;
+			height: 100vh;
+
+			position: absolute;
 			right: 0;
+			background-color: #fff;
+
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+		}
+
+		&__dialog {
+			display: flex;
+			flex-direction: column;
+			gap: 87px;
+		}
+		&__header {
+			@include display-main;
+
+			position: relative;
+		}
+		&__close {
+			position: absolute;
+			top: 9px;
+			right: 9px;
+		}
+		&__list {
+			display: flex;
+			flex-direction: column;
+			align-items: flex-start;
+			gap: 52px;
+		}
+
+		&__item {
+			display: flex;
+			flex-direction: column;
+			gap: 16px;
+		}
+		&__link {
+			@include mainText($MontserratMed, normal, 500, 24px, 29px);
+
+			color: #555555;
+		}
+		&__item1,
+		&__title {
+			@include mainText($MontserratMed, normal, 500, 28px, 34px);
+
+			text-align: left;
+
+			color: #000000;
+		}
+
+		&__footer {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
+
+		&__phone {
+			@include mainText($MontserratMed, normal, 600, 18px, 22px);
+
+			color: #000;
+		}
+
+		&__img {
+			padding: 18px;
+
+			transition: all 0.3s ease;
+			cursor: pointer;
+
+			&:hover svg path {
+				fill: #000;
+			}
+
+			&:active {
+				svg path {
+					fill: #fff;
+				}
+				border-radius: 100px;
+				background-color: #299764;
+			}
+		}
+
+		&__button {
+			position: relative;
+
+			@include mainText($MontserratMed, normal, 500, 18px, 22px);
+			color: #ffffff;
+
+			background: #299764;
+			border-radius: 100px;
+			padding: 18px 60px 18px 30px;
+			border: none;
+
+			&::before {
+				position: absolute;
+				content: "";
+				background-image: url("../../assets/images/logo/Login.svg");
+				top: 18px;
+				right: 30px;
+				width: 22px;
+				height: 22px;
+			}
+
+			&:hover {
+				background-color: #077743;
+			}
+
+			&:active {
+				background-color: transparent;
+				color: #000;
+
+				&::before {
+					background-image: url("../../assets/images/logo/login2.svg");
+				}
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 1007px) {
+	.header {
+		padding: 27px;
+		.header__left {
+			width: 100%;
+			justify-content: space-between;
+		}
+
+		.nav {
+			display: none;
+		}
+		.header__rigth {
+			display: none;
+		}
+		.header__img {
+			display: block;
 		}
 	}
 }

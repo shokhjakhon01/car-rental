@@ -21,6 +21,10 @@
 								alt="website_logo" />
 						</a>
 					</div>
+					<img
+						class="header__img"
+						src="./assets/images/logo/Group 34411 (2).svg"
+						alt="hamburgermenu" />
 					<nav class="nav">
 						<ul class="nav__list">
 							<li class="nav__item">
@@ -85,6 +89,9 @@
 						<button class="login__button">Login</button>
 					</div>
 				</div>
+
+				<!-- MODAL MENU -->
+
 				<div class="modal">
 					<div class="modal__dialog">
 						<div class="modal__header">
@@ -93,6 +100,9 @@
 								Use the email and password that you login
 							</p>
 							<img
+								id="close-modal"
+								width="22"
+								height="22"
 								class="modal__close"
 								src="./assets/images/logo/Cross.svg"
 								alt="close-modal" />
@@ -107,14 +117,14 @@
 								name=""
 								placeholder="Email"
 								required />
-							<div>
+							<div class="form-password">
 								<input
 									class="form-password__input"
 									type="password"
-									name=""
 									placeholder="Password"
 									required />
 								<svg
+									class="form-password__img"
 									width="22"
 									height="22"
 									viewBox="0 0 22 22"
@@ -129,11 +139,74 @@
 										d="M11.0001 5.04175C8.60046 5.04175 6.44242 6.00552 4.8874 7.19899C4.10887 7.7965 3.47006 8.46012 3.02186 9.10596C2.5822 9.73949 2.29175 10.4057 2.29175 11.0001C2.29175 11.5945 2.5822 12.2607 3.02186 12.8942C3.47006 13.54 4.10887 14.2037 4.8874 14.8012C6.44242 15.9946 8.60046 16.9584 11.0001 16.9584C13.3997 16.9584 15.5577 15.9946 17.1128 14.8012C17.8913 14.2037 18.5301 13.54 18.9783 12.8942C19.418 12.2607 19.7084 11.5945 19.7084 11.0001C19.7084 10.4057 19.418 9.73949 18.9783 9.10596C18.5301 8.46012 17.8913 7.7965 17.1128 7.19899C15.5577 6.00552 13.3997 5.04175 11.0001 5.04175ZM7.56258 11.0001C7.56258 9.1016 9.1016 7.56258 11.0001 7.56258C12.8986 7.56258 14.4376 9.1016 14.4376 11.0001C14.4376 12.8986 12.8986 14.4376 11.0001 14.4376C9.1016 14.4376 7.56258 12.8986 7.56258 11.0001Z"
 										fill="black" />
 								</svg>
-								<p class="password__reset">Forgot password</p>
+								<p class="form-password__reset">Forgot password</p>
 							</div>
 							<h5 class="form__accaunt">I want to create an account</h5>
-							<button type="submit" class="form__button">Login</button>
+							<button type="submit" class="form__button">
+								<div class="form__login">Login</div>
+							</button>
 						</form>
+					</div>
+				</div>
+
+				<!-- MOBILE MENU -->
+
+				<div class="mobile">
+					<div class="mobile__content">
+						<div class="mobile__dialog">
+							<div class="mobile__header">
+								<img
+									class="mobile__logo"
+									width="150"
+									height="40"
+									src="./assets/images/logo/logo.svg"
+									alt="mobile logo" />
+								<img
+									class="mobile__close"
+									src="./assets/images/logo/Cross.svg"
+									alt="mobile close" />
+							</div>
+							<ul class="mobile__list">
+								<li class="mobile__item1">Categories</li>
+								<li class="mobile__item">
+									<h6 class="mobile__title">About Us</h6>
+									<a href="./index.html" class="mobile__link">News</a>
+									<a href="./index.html" class="mobile__link"
+										>Careers</a
+									>
+									<a href="./index.html" class="mobile__link"
+										>Locations</a
+									>
+								</li>
+								<li class="mobile__item">
+									<h6 class="mobile__title">Help center</h6>
+									<a href="./index.html" class="mobile__link">FAQ</a>
+									<a href="./index.html" class="mobile__link"
+										>Contact us</a
+									>
+								</li>
+							</ul>
+						</div>
+						<div class="mobile__footer">
+							<a class="mobile__phone" href="tel:+1 8554200000"
+								>+1 855 420 0000</a
+							>
+
+							<div class="mobile__img">
+								<svg
+									width="22"
+									height="22"
+									viewBox="0 0 22 22"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg">
+									<path
+										d="M11 3.20825C6.69676 3.20825 3.20831 6.6967 3.20831 10.9999C3.20831 15.3031 6.69676 18.7916 11 18.7916C15.0495 18.7916 18.377 15.7027 18.7558 11.7523C18.7734 11.5684 18.6789 11.3919 18.5162 11.3046C18.3534 11.2173 18.1541 11.2362 18.0107 11.3526C17.2227 11.9921 16.2192 12.3749 15.125 12.3749C12.5937 12.3749 10.5416 10.3229 10.5416 7.79158C10.5416 6.28816 11.265 4.9538 12.3847 4.11728C12.5327 4.00667 12.5999 3.81799 12.555 3.63873C12.51 3.45947 12.3619 3.32472 12.1792 3.29697C11.7944 3.23852 11.4006 3.20825 11 3.20825Z"
+										fill="#555555" />
+								</svg>
+							</div>
+
+							<button class="mobile__button">Login</button>
+						</div>
 					</div>
 				</div>
 			</header>
@@ -143,5 +216,6 @@
 			</main>
 			<footer class="footer"></footer>
 		</div>
+		<script src="./scripts/index.js"></script>
 	</body>
 </html>
