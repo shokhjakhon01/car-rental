@@ -1,147 +1,316 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="./css/main.min.css" />
-		<title>Document</title>
-	</head>
-	<body>
-		<div class="container">
-			<header class="header">
-				<div class="header__left">
-					<div class="logo">
-						<a class="logo__block" href="index.html">
-							<img
-								class="logo__img"
-								width="150"
-								height="40"
-								src="./assets/images/logo/logo.svg"
-								alt="website_logo" />
-						</a>
-					</div>
-					<nav class="nav">
-						<ul class="nav__list">
-							<li class="nav__item">
-								<a class="nav__link" href="#">Categories</a>
-							</li>
-							<li class="nav__item">
-								<a class="nav__link" href="#">About Us</a>
-								<div class="drop-about">
-									<ul class="drop-about__list">
-										<li class="drop-about__item">
-											<a class="drop-about__link" href="#">News</a>
-										</li>
-										<li class="drop-about__item">
-											<a class="drop-about__link" href="#"
-												>Careers</a
-											>
-										</li>
-										<li class="drop-about__item">
-											<a class="drop-about__link" href="#"
-												>Locations</a
-											>
-										</li>
-									</ul>
-								</div>
-							</li>
-							<li class="nav__item">
-								<a class="nav__link" href="#">Help center</a>
-								<div class="drop-help">
-									<ul class="drop-help__list">
-										<li class="drop-help__item">
-											<a class="drop-help__link" href="#">FAQ</a>
-										</li>
-										<li class="drop-help__item">
-											<a class="drop-help__link" href="#"
-												>Contact us</a
-											>
-										</li>
-									</ul>
-								</div>
-							</li>
-						</ul>
-					</nav>
-				</div>
-				<div class="header__rigth">
-					<a class="call__block" href="tel:+1 8554200000"
-						>+1 855 420 0000</a
-					>
-					<div class="login">
-						<div class="login__img">
-							<svg
-								width="22"
-								height="22"
-								viewBox="0 0 22 22"
-								fill="none"
-								xmlns="http://www.w3.org/2000/svg">
-								<path
-									d="M11 3.20825C6.69676 3.20825 3.20831 6.6967 3.20831 10.9999C3.20831 15.3031 6.69676 18.7916 11 18.7916C15.0495 18.7916 18.377 15.7027 18.7558 11.7523C18.7734 11.5684 18.6789 11.3919 18.5162 11.3046C18.3534 11.2173 18.1541 11.2362 18.0107 11.3526C17.2227 11.9921 16.2192 12.3749 15.125 12.3749C12.5937 12.3749 10.5416 10.3229 10.5416 7.79158C10.5416 6.28816 11.265 4.9538 12.3847 4.11728C12.5327 4.00667 12.5999 3.81799 12.555 3.63873C12.51 3.45947 12.3619 3.32472 12.1792 3.29697C11.7944 3.23852 11.4006 3.20825 11 3.20825Z"
-									fill="#555555" />
-							</svg>
-						</div>
-
-						<button class="login__button">Login</button>
-					</div>
-				</div>
-				<div class="modal">
-					<div class="modal__dialog">
-						<div class="modal__header">
-							<h3 class="modal__title">Login</h3>
-							<p class="modal__subtitle">
-								Use the email and password that you login
-							</p>
-							<img
-								class="modal__close"
-								src="./assets/images/logo/Cross.svg"
-								alt="close-modal" />
-						</div>
-						<form
-							class="modal__form form"
-							action="https://echo.htmlacademy.ru/"
-							method="post">
-							<input
-								class="form-email__input"
-								type="email"
-								name=""
-								placeholder="Email"
-								required />
-							<div>
-								<input
-									class="form-password__input"
-									type="password"
-									name=""
-									placeholder="Password"
-									required />
-								<svg
-									width="22"
-									height="22"
-									viewBox="0 0 22 22"
-									fill="none"
-									xmlns="http://www.w3.org/2000/svg">
-									<path
-										d="M11.0001 8.93758C9.86099 8.93758 8.93758 9.86099 8.93758 11.0001C8.93758 12.1392 9.86099 13.0626 11.0001 13.0626C12.1392 13.0626 13.0626 12.1392 13.0626 11.0001C13.0626 9.86099 12.1392 8.93758 11.0001 8.93758Z"
-										fill="black" />
-									<path
-										fill-rule="evenodd"
-										clip-rule="evenodd"
-										d="M11.0001 5.04175C8.60046 5.04175 6.44242 6.00552 4.8874 7.19899C4.10887 7.7965 3.47006 8.46012 3.02186 9.10596C2.5822 9.73949 2.29175 10.4057 2.29175 11.0001C2.29175 11.5945 2.5822 12.2607 3.02186 12.8942C3.47006 13.54 4.10887 14.2037 4.8874 14.8012C6.44242 15.9946 8.60046 16.9584 11.0001 16.9584C13.3997 16.9584 15.5577 15.9946 17.1128 14.8012C17.8913 14.2037 18.5301 13.54 18.9783 12.8942C19.418 12.2607 19.7084 11.5945 19.7084 11.0001C19.7084 10.4057 19.418 9.73949 18.9783 9.10596C18.5301 8.46012 17.8913 7.7965 17.1128 7.19899C15.5577 6.00552 13.3997 5.04175 11.0001 5.04175ZM7.56258 11.0001C7.56258 9.1016 9.1016 7.56258 11.0001 7.56258C12.8986 7.56258 14.4376 9.1016 14.4376 11.0001C14.4376 12.8986 12.8986 14.4376 11.0001 14.4376C9.1016 14.4376 7.56258 12.8986 7.56258 11.0001Z"
-										fill="black" />
-								</svg>
-								<p class="password__reset">Forgot password</p>
-							</div>
-							<h5 class="form__accaunt">I want to create an account</h5>
-							<button type="submit" class="form__button">Login</button>
-						</form>
-					</div>
-				</div>
-			</header>
-			<main>
-				<section class="hero"></section>
-				<section class="rent"></section>
-			</main>
-			<footer class="footer"></footer>
-		</div>
-	</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <div class="header__left">
+          <div class="logo">
+            <a class="logo__block" href="index.html">
+              <img
+                class="logo__img"
+                width="150"
+                height="40"
+                src="./assets/images/logo/logo.svg"
+                alt="website_logo"
+              />
+            </a>
+          </div>
+          <nav class="nav">
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a class="nav__link" href="#">Categories</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#">About Us</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#">Help center</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="header__rigth">
+          <a href="tel:+1 8554200000">+1 855 420 0000</a>
+          <div class="login">
+            <img
+              class="login__img"
+              src="./assets/images/icon-dark-mode-light-mode/light-mode-icon.svg"
+              alt="light mode icon"
+            />
+            <button class="login__button">Login</button>
+          </div>
+        </div>
+      </header>
+      <main>
+        <section class="hero"></section>
+        <section class="rent-with__ease">
+          <div class="rent-cards">
+            <div class="rent-cards__texts">
+              <h3 class="rent-cards__text">Choose the car of your dreams</h3>
+              <p class="rent-cards__paragraph">
+                We provide our customers with the most incredible driving
+                emotions. That is why there are only world-class cars in our
+                fleet
+              </p>
+              <div class="rent-cards__buttons"></div>
+            </div>
+            <div class="rent-cards__all-items"></div>
+            <div class="rent-button">
+              <a href="#" class="rent-cards__CompactButton">View all cars</a>
+            </div>
+          </div>
+        </section>
+        <section class="brands">
+          <div class="brands-slider">
+            <p>More than 50 brands of cars</p>
+            <div class="logo-slider">
+              <div class="logo-slide-track">
+                <div class="slide">
+                  <img
+                    src="./assets/images/car-brands-imgs/logo-dodge.png"
+                    alt=""
+                  />
+                </div>
+                <div class="slide">
+                  <img
+                    src="./assets/images/car-brands-imgs/logo-ford.png"
+                    alt=""
+                  />
+                </div>
+                <div class="slide">
+                  <img
+                    src="./assets/images/car-brands-imgs/logo-hyundai.png"
+                    alt=""
+                  />
+                </div>
+                <div class="slide">
+                  <img
+                    src="./assets/images/car-brands-imgs/logo-nissan.png"
+                    alt=""
+                  />
+                </div>
+                <div class="slide">
+                  <img
+                    src="./assets/images/car-brands-imgs/logo-toyota.png"
+                    alt=""
+                  />
+                </div>
+                <div class="slide">
+                  <img
+                    src="./assets/images/car-brands-imgs/logo-dodge.png"
+                    alt=""
+                  />
+                </div>
+                <div class="slide">
+                  <img
+                    src="./assets/images/car-brands-imgs/logo-ford.png"
+                    alt=""
+                  />
+                </div>
+                <div class="slide">
+                  <img
+                    src="./assets/images/car-brands-imgs/logo-hyundai.png"
+                    alt=""
+                  />
+                </div>
+                <div class="slide">
+                  <img
+                    src="./assets/images/car-brands-imgs/logo-nissan.png"
+                    alt=""
+                  />
+                </div>
+                <div class="slide">
+                  <img
+                    src="./assets/images/car-brands-imgs/logo-toyota.png"
+                    alt=""
+                  />
+                </div>
+                <div class="slide">
+                  <img
+                    src="./assets/images/car-brands-imgs/logo-dodge.png"
+                    alt=""
+                  />
+                </div>
+                <div class="slide">
+                  <img
+                    src="./assets/images/car-brands-imgs/logo-ford.png"
+                    alt=""
+                  />
+                </div>
+                <div class="slide">
+                  <img
+                    src="./assets/images/car-brands-imgs/logo-hyundai.png"
+                    alt=""
+                  />
+                </div>
+                <div class="slide">
+                  <img
+                    src="./assets/images/car-brands-imgs/logo-nissan.png"
+                    alt=""
+                  />
+                </div>
+                <div class="slide">
+                  <img
+                    src="./assets/images/car-brands-imgs/logo-toyota.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="unparalleled">
+          <div class="unparalleled-texts">
+            <h5 class="unparalleled-text">Unparalleled service</h5>
+            <p>
+              Whether you are looking for Newark Airport car rental, an
+              insurance replacement vehicle or minivan to take on vacation Car
+              rental has it all.
+            </p>
+          </div>
+          <div class="all-services"></div>
+        </section>
+        <section class="carRental">
+          <div class="carRentalAll-items">
+            <div class="carRental-all">
+              <div class="carRental-texts">
+                <h5>Car rental keeps you safe</h5>
+                <p>
+                  The safety of our employees and renters is our number one
+                  priority. In addition to being confident your vehicle is
+                  cleaned and sanitized every time you rent, you can also feel
+                  confident that we will take every opportunity to enhance the
+                  health and safety measures currently practiced in our
+                  operations.
+                </p>
+              </div>
+              <div class="carRentalCards">
+                <div class="carRental-card">
+                  <img
+                    class="icon1"
+                    src="./assets/images/service-cards-imgs/cards-icon.svg"
+                    alt=""
+                  />
+                  <p>Every car is thoroughly sanitized and cleaned</p>
+                </div>
+                <div class="carRental-card">
+                  <img
+                    class="icon1"
+                    src="./assets/images/service-cards-imgs/cards-hard.svg"
+                    alt=""
+                  />
+                  <p class="text">All of our employees wear masks</p>
+                </div>
+                <div class="carRental-card">
+                  <img
+                    class="icon1"
+                    src="./assets/images/service-cards-imgs/cards-file.svg"
+                    alt=""
+                  />
+                  <p>We stay up to date with all protocol from the CDC</p>
+                </div>
+              </div>
+            </div>
+            <img
+              class="puple"
+              src="./assets/images/service-cards-imgs/puple.png"
+              alt=""
+            />
+          </div>
+        </section>
+      </main>
+    </div>
+    <footer class="footer">
+      <div class="container">
+        <div class="footerLogo">
+          <div class="footer-logo__img">
+            <a href="" class="fotter-carRental">
+              <img src="./assets/images/service-cards-imgs/Logo.svg" alt="" />
+            </a>
+            <p>
+              Car rental offers a wide range of cars available for rent in
+              Newark EWR Airport NJ. We pride ourselves in our customer service,
+              and hassle-free renting experience.
+            </p>
+          </div>
+          <ul class="footer-list">
+            <li class="footer-list__item">
+              <span>Main</span>
+            </li>
+            <li class="footer-list__item">
+              <a href="#" class="footer-link">My Bookings</a>
+            </li>
+            <li class="footer-list__item">
+              <a href="#" class="footer-link">Reservation</a>
+            </li>
+          </ul>
+          <ul class="footer-list">
+            <li class="footer-list__item">
+              <span>Categories</span>
+            </li>
+            <li class="footer-list__item">
+              <a href="#" class="footer-link">Compact</a>
+            </li>
+            <li class="footer-list__item">
+              <a href="#" class="footer-link">Sports cars</a>
+            </li>
+            <li class="footer-list__item">
+              <a href="#" class="footer-link">Vans</a>
+            </li>
+          </ul>
+          <ul class="footer-list">
+            <li class="footer-list__item">
+              <span>Company</span>
+            </li>
+            <li class="footer-list__item">
+              <a href="#" class="footer-link">About us</a>
+            </li>
+            <li class="footer-list__item">
+              <a href="#" class="footer-link">Careers</a>
+            </li>
+            <li class="footer-list__item">
+              <a href="#" class="footer-link">News</a>
+            </li>
+            <li class="footer-list__item">
+              <a href="#" class="footer-link">Contact us</a>
+            </li>
+          </ul>
+          <ul class="footer-list">
+            <li class="footer-list__item">
+              <span>Our Locations</span>
+            </li>
+            <li class="footer-list__item">
+              <a href="#" class="footer-link">2118 Thornridge Cir. Syracuse</a>
+            </li>
+            <li class="footer-list__item">
+              <a href="#" class="footer-link">4140 Parker Rd. Allentown</a>
+            </li>
+            <li class="footer-list__item">
+              <a href="#" class="footer-link">4517 Washington Ave.</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="scripts/objectCars.js"></script>
+    <script src="scripts/renderCars.js"></script>
+    <script src="scripts/service.js"></script>
+    <script src="scripts/serviceRender.js"></script>
+  </body>
 </html>
