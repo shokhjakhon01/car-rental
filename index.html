@@ -5,9 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
-/>
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="./css/main.min.css" />
     <title>Document</title>
   </head>
@@ -44,18 +44,65 @@
             <!-- Additional required wrapper -->
             <div class="swiper-wrapper">
               <!-- Slides -->
-              <div class="swiper-slide"><img src="./assets/images/slider-cards-imgs/sliderImg-1.png" alt=""></div>
-              <div class="swiper-slide"><img src="./assets/images/slider-cards-imgs/sliderImg-2.png" alt=""></div>
-              <div class="swiper-slide"><img src="./assets/images/slider-cards-imgs/sliderImg-3.png" alt=""></div>
-              ...
+              <div class="swiper-slide">
+                <div class="hero__infos">
+                  <h3 class="hero__title">Compact cars</h3>
+                  <p class="hero__text">
+                    Rent cars as you are comfortable and where you are
+                    comfortable.
+                  </p>
+                </div>
+                <img
+                  height="500"
+                  src="./assets/images/slider-cards-imgs/sliderImg-1.png"
+                  alt=""
+                />
+              </div>
+              <div class="swiper-slide">
+                <div class="hero__infos">
+                  <h3 class="hero__title">Sports cars</h3>
+                  <p class="hero__text">
+                    Rent cars as you are comfortable and where you are
+                    comfortable.
+                  </p>
+                </div>
+                <img
+                  height="500"
+                  src="./assets/images/slider-cards-imgs/sliderImg-2.png"
+                  alt=""
+                />
+              </div>
+              <div class="swiper-slide">
+                <div class="hero__infos">
+                  <h3 class="hero__title">Vans</h3>
+                  <p class="hero__text">
+                    Rent cars as you are comfortable and where you are
+                    comfortable.
+                  </p>
+                </div>
+                <img
+                  height="500"
+                  src="./assets/images/slider-cards-imgs/sliderImg-3.png"
+                  alt=""
+                />
+              </div>
             </div>
-            <!-- If we need pagination -->
-            <div class="swiper-pagination"></div>
-          
+
+            <div class="swiper-pagination swiper__pagination"></div>
+
             <!-- If we need navigation buttons -->
             <div class="swiper-button-prev"></div>
             <div class="swiper-button-next"></div>
-          
+          </div>
+          <div class="hero__search">
+            <input
+              class="hero__input"
+              type="text"
+              placeholder="Find the car of your dreams"
+            />
+            <button class="hero__searchBtn">
+              <img src="./assets/images/slider-cards-imgs/search.svg" alt="" />
+            </button>
           </div>
         </section>
         <section class="rent"></section>

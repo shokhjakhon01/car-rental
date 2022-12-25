@@ -1,11 +1,168 @@
 .swiper {
   width: 100%;
   min-height: 500px;
-}
-
-.swiper-slide{
   border-radius: 20px;
 }
-.swiper-slide img{
+
+.swiper-slide {
+  border-radius: 20px;
+}
+.swiper-slide img {
   width: 100%;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  position: absolute;
+  top: 424px;
+  width: 36px;
+  height: 36px;
+  background: #ffffff;
+  border-radius: 100px;
+}
+
+.swiper-button-prev {
+  left: 92%;
+
+  @include media(1200){
+    left: 90%;
+  }
+  @include media(992){
+    left: 87%;
+  }
+  @include media(768){
+    left: 80%;
+  }
+  @include media(460){
+    left: 75%;
+  }
+}
+
+.swiper-button-prev::after {
+  font-size: 8px;
+  color: #555555;
+}
+.swiper-button-next::after {
+  font-size: 8px;
+  color: #555555;
+}
+
+.swiper__pagination {
+  position: absolute;
+  bottom: 70px !important;
+  width: 200px !important;
+  height: 8px !important;
+}
+
+.swiper-pagination span {
+  background-color: #fff !important;
+}
+
+.swiper-pagination-bullet-active {
+  width: 30px !important;
+  height: 8px !important;
+  background: #ffffff;
+  border-radius: 100px !important;
+}
+
+.hero{
+  position: relative;
+}
+
+.hero__infos {
+  position: absolute;
+  top: 60px;
+  left: 30%;
+
+
+  @include media(992){
+    left: 20%;
+  }
+  @include media(992){
+    left: 12%;
+  }
+}
+
+.hero__title {
+  margin-bottom: 10px;
+  font-family: $MontserratSemi;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+
+  line-height: 44px;
+  text-align: center;
+
+  color: #ffffff;
+}
+
+.hero__text {
+  max-width: 416px;
+
+  font-family: $MontserratReg;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+
+  color: #ffffff;
+}
+
+.hero__search {
+  position: absolute;
+  max-width: 600px;
+  width: 100%;
+  bottom: -33px;
+  right: 25%;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @include media(1200){
+    right: 20%;
+  }
+
+  @include media(992){
+    right: 7%;
+  }
+  @include media(768){
+    right: 1%;
+  }
+}
+
+.hero__input {
+  max-width: 600px;
+  width: 100%;
+  padding: 30px 22px;
+  border-radius: 100px;
+  border: none;
+  outline: none;
+  background: #ffffff;
+
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+
+  &::placeholder {
+    font-family: $MontserratMed;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+
+    color: #555555;
+  }
+}
+
+.hero__searchBtn{
+  width: 58px;
+  height: 58px;
+  background: #299764;
+border-radius: 100px;
+border: none;
+outline: none;
+margin-left: -70px;
+cursor: pointer;
 }
