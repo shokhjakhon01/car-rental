@@ -10,6 +10,7 @@
 .swiper-slide img {
   width: 100%;
   border-radius: 20px;
+  object-fit: cover;
 }
 
 .swiper-button-prev,
@@ -24,6 +25,19 @@
 
 .swiper-button-prev {
   left: 92%;
+
+  @include media(1200){
+    left: 90%;
+  }
+  @include media(992){
+    left: 87%;
+  }
+  @include media(768){
+    left: 80%;
+  }
+  @include media(460){
+    left: 75%;
+  }
 }
 
 .swiper-button-prev::after {
@@ -53,10 +67,22 @@
   border-radius: 100px !important;
 }
 
+.hero{
+  position: relative;
+}
+
 .hero__infos {
   position: absolute;
-  top:60px;
+  top: 60px;
   left: 30%;
+
+
+  @include media(992){
+    left: 20%;
+  }
+  @include media(992){
+    left: 12%;
+  }
 }
 
 .hero__title {
@@ -74,7 +100,7 @@
 
 .hero__text {
   max-width: 416px;
-  
+
   font-family: $MontserratReg;
   font-style: normal;
   font-weight: 400;
@@ -85,6 +111,58 @@
   color: #ffffff;
 }
 
-.hero__search{
-  
+.hero__search {
+  position: absolute;
+  max-width: 600px;
+  width: 100%;
+  bottom: -33px;
+  right: 25%;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @include media(1200){
+    right: 20%;
+  }
+
+  @include media(992){
+    right: 7%;
+  }
+  @include media(768){
+    right: 1%;
+  }
+}
+
+.hero__input {
+  max-width: 600px;
+  width: 100%;
+  padding: 30px 22px;
+  border-radius: 100px;
+  border: none;
+  outline: none;
+  background: #ffffff;
+
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+
+  &::placeholder {
+    font-family: $MontserratMed;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+
+    color: #555555;
+  }
+}
+
+.hero__searchBtn{
+  width: 58px;
+  height: 58px;
+  background: #299764;
+border-radius: 100px;
+border: none;
+outline: none;
+margin-left: -70px;
+cursor: pointer;
 }
