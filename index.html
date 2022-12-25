@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+/>
     <link rel="stylesheet" href="./css/main.min.css" />
     <title>Document</title>
   </head>
@@ -35,10 +39,30 @@
         <div class="header__rigth"></div>
       </header>
       <main>
-        <section class="hero"></section>
+        <section class="hero">
+          <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide"><img src="./assets/images/slider-cards-imgs/sliderImg-1.png" alt=""></div>
+              <div class="swiper-slide"><img src="./assets/images/slider-cards-imgs/sliderImg-2.png" alt=""></div>
+              <div class="swiper-slide"><img src="./assets/images/slider-cards-imgs/sliderImg-3.png" alt=""></div>
+              ...
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+          
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          
+          </div>
+        </section>
         <section class="rent"></section>
       </main>
       <footer class="footer"></footer>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="./scripts/slider.js"></script>
   </body>
 </html>
