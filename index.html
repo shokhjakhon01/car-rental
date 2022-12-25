@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/main.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <title>Document</title>
   </head>
   <body>
@@ -59,30 +60,24 @@
                 emotions. That is why there are only world-class cars in our
                 fleet
               </p>
-              <div class="rent-cards__buttons">
-                <a
-                  href="#"
-                  class="rent-cards__CompactButton rent-cards__buttons-all"
-                  >Compact</a
-                >
-                <a
-                  href="#"
-                  class="rent-cards__SportsButton rent-cards__buttons-all"
-                  >Sports cars</a
-                >
-                <a
-                  href="#"
-                  class="rent-cards__VansButton rent-cards__buttons-all"
-                  >Vans
-                </a>
-              </div>
+              <div class="rent-cards__buttons"></div>
             </div>
             <div class="rent-cards__all-items"></div>
+            <div class="rent-button">
+              <a href="#" class="rent-cards__CompactButton">View all cars</a>
+            </div>
           </div>
+        </section>
+        <section class="brands">
+          <div class="brands-slider"></div>
         </section>
       </main>
       <footer class="footer"></footer>
     </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     <script src="scripts/objectCars.js"></script>
     <script src="scripts/renderCars.js"></script>
   </body>
