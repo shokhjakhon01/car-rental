@@ -1,0 +1,12 @@
+.header {
+	@include display-main;
+
+	&__left {
+		@include display-main;
+		gap: 20px;
+
+        .nav{
+            
+        }
+	}
+}
