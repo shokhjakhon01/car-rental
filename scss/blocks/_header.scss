@@ -1,6 +1,8 @@
 .header {
 	@include display-main;
 
+	padding: 18px 0px;
+
 	&__left {
 		@include display-main;
 		gap: 20px;
@@ -11,12 +13,236 @@
 				align-items: center;
 			}
 			&__item {
-				padding: 18px 16px;
+				position: relative;
+
+				padding: 18px 46px 18px 16px;
+
+				.drop-about {
+					position: absolute;
+					top: 58px;
+					left: 0;
+
+					display: none;
+					width: 147px;
+					padding: 10px;
+
+					box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+					border-radius: 20px;
+
+					&__list {
+						display: flex;
+						flex-direction: column;
+					}
+
+					&__item {
+						padding: 18px 0px 18px 16px;
+					}
+					&__link {
+						@include mainText($MontserratMed, normal, 500, 18px, 22px);
+
+						color: #000;
+					}
+				}
+
+				.drop-help {
+					position: absolute;
+					top: 58px;
+					left: 0;
+
+					display: none;
+					width: 147px;
+					padding: 10px;
+
+					box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+					border-radius: 20px;
+
+					&__list {
+						display: flex;
+						flex-direction: column;
+					}
+
+					&__item {
+						padding: 18px 0px 18px 16px;
+					}
+					&__link {
+						@include mainText($MontserratMed, normal, 500, 18px, 22px);
+
+						color: #000;
+					}
+				}
+
+				&:nth-child(2) .nav__link {
+					&::before {
+						position: absolute;
+						content: "";
+						background-image: url("../../assets/images/logo/Caret-down.svg");
+						top: 18px;
+						right: 16px;
+						width: 22px;
+						height: 22px;
+						transition: all 0.4s ease;
+					}
+				}
+
+				&:nth-child(2):hover .drop-about {
+					display: block;
+				}
+
+				&:nth-child(2):hover .nav__link::before {
+					transform: rotate(180deg);
+				}
+
+				&:last-child .nav__link {
+					&::before {
+						position: absolute;
+						content: "";
+						background-image: url("../../assets/images/logo/Caret-down.svg");
+						top: 18px;
+						right: 16px;
+						width: 22px;
+						height: 22px;
+						transition: all 0.4s ease;
+					}
+				}
+
+				&:last-child:hover .drop-help {
+					display: block;
+				}
+
+				&:last-child:hover .nav__link::before {
+					transform: rotate(180deg);
+				}
 			}
+
 			&__link {
 				@include mainText($MontserratMed, normal, 500, 18px, 22px);
+
+				color: #000;
 				text-align: center;
 			}
+		}
+	}
+
+	&__rigth {
+		@include display-main;
+		gap: 24px;
+
+		.call__block {
+			@include mainText($MontserratMed, normal, 600, 18px, 22px);
+
+			color: #000;
+		}
+
+		.login {
+			@include display-main;
+			gap: 16px;
+
+			&__img {
+				padding: 18px;
+
+				transition: all 0.3s ease;
+				cursor: pointer;
+
+				&:hover svg path {
+					fill: #000;
+				}
+
+				&:active {
+					svg path {
+						fill: #fff;
+					}
+					border-radius: 100px;
+					background-color: #299764;
+				}
+			}
+
+			.login__button {
+				position: relative;
+
+				@include mainText($MontserratMed, normal, 500, 18px, 22px);
+				color: #ffffff;
+
+				background: #299764;
+				border-radius: 100px;
+				padding: 18px 60px 18px 30px;
+				border: none;
+
+				&::before {
+					position: absolute;
+					content: "";
+					background-image: url("../../assets/images/logo/Login.svg");
+					top: 18px;
+					right: 30px;
+					width: 22px;
+					height: 22px;
+				}
+
+				&:hover {
+					background-color: #077743;
+				}
+
+				&:active {
+					background-color: transparent;
+					color: #000;
+
+					&::before {
+						background-image: url("../../assets/images/logo/login2.svg");
+					}
+				}
+			}
+		}
+	}
+
+	.modal {
+		position: fixed;
+		top: 0;
+		left: 0;
+
+		// display: none;
+		width: 100%;
+		height: 100vh;
+
+		z-index: 1050;
+		overflow: hidden;
+
+		background-color: linear-gradient(
+			0deg,
+			rgba(0, 0, 0, 0.2),
+			rgba(0, 0, 0, 0.2)
+		);
+		&__dialog {
+			position: absolute;
+			top: 208px;
+			left: 425px;
+			right: 425px;
+
+			max-width: 590px;
+			width: 100%;
+			
+			box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.1);
+			border-radius: 20px;
+		}
+
+		&__header {
+			display: flex;
+			flex-direction: column;
+			gap: 10px;
+			text-align: center;
+		}
+
+		&__title {
+			@include mainText($MontserratMed, normal, 600, 36px, 44px);
+			color: #000000;
+		}
+
+		&__subtitle {
+			@include mainText($MontserratMed, normal, 400, 16px, 24px);
+
+			color: #555555;
+		}
+		&__close {
+			position: absolute;
+			right: 0;
 		}
 	}
 }
