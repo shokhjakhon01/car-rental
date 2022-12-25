@@ -26,16 +26,16 @@
 .swiper-button-prev {
   left: 92%;
 
-  @include media(1200){
+  @include media(1200) {
     left: 90%;
   }
-  @include media(992){
+  @include media(992) {
     left: 87%;
   }
-  @include media(768){
+  @include media(768) {
     left: 80%;
   }
-  @include media(460){
+  @include media(460) {
     left: 75%;
   }
 }
@@ -67,7 +67,7 @@
   border-radius: 100px !important;
 }
 
-.hero{
+.hero {
   position: relative;
 }
 
@@ -76,11 +76,10 @@
   top: 60px;
   left: 30%;
 
-
-  @include media(992){
+  @include media(992) {
     left: 20%;
   }
-  @include media(992){
+  @include media(992) {
     left: 12%;
   }
 }
@@ -122,14 +121,14 @@
   align-items: center;
   justify-content: center;
 
-  @include media(1200){
+  @include media(1200) {
     right: 20%;
   }
 
-  @include media(992){
+  @include media(992) {
     right: 7%;
   }
-  @include media(768){
+  @include media(768) {
     right: 1%;
   }
 }
@@ -156,13 +155,13 @@
   }
 }
 
-.hero__searchBtn{
+.hero__searchBtn {
   width: 58px;
   height: 58px;
   background: #299764;
-border-radius: 100px;
-border: none;
-outline: none;
-margin-left: -70px;
-cursor: pointer;
+  border-radius: 100px;
+  border: none;
+  outline: none;
+  margin-left: -70px;
+  cursor: pointer;
 }
