@@ -165,6 +165,18 @@
     border-radius: 16px;
     padding: 25px 35px 25px 20px;
   }
+  .rent-cards__fordFiesta:hover {
+    background: #299764;
+  }
+  .rent-cards__fordFiesta:hover .fordFiesta-texts__name {
+    color: #fff;
+  }
+  .rent-cards__fordFiesta:hover .fordFiesta-texts__name-two {
+    color: #fff;
+  }
+  .rent-cards__fordFiesta:hover .fordFiesta-paragraph {
+    color: #fff;
+  }
 }
 
 .rent-button {
@@ -173,7 +185,306 @@
   margin-bottom: 160px;
 }
 
+.brands-slider p {
+  font-family: $MontserratMed;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  color: #000000;
+  margin-bottom: 35px;
+}
+
+.unparalleled-texts {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 40px;
+}
+
+.unparalleled-text {
+  font-family: $MontserratSemi;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 44px;
+  text-align: center;
+  color: #000000;
+}
+
+.unparalleled-texts p {
+  font-family: $MontserratMed;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #555555;
+  width: 684px;
+}
+
+.book-page {
+  background: #f5f5f5;
+  border-radius: 20px;
+  width: 500px;
+  padding: 40px 32px;
+}
+
+.book-page:hover {
+  background: #299764;
+  border-radius: 20px;
+}
+
+.book-page:hover .book-about h4 {
+  color: #fff;
+}
+
+.book-page:hover .hover p {
+  color: #fff;
+}
+
+.all-services {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 160px;
+}
+
+.book-about {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.book-about h4 {
+  font-family: $MontserratMed;
+  width: 211px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 39px;
+  color: #000000;
+  margin-bottom: 10px;
+}
+
+.book-page p {
+  width: 354px;
+  font-family: $MontserratMed;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #555555;
+}
+
+.carRentalAll-items {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.puple {
+  position: absolute;
+  right: 0;
+  top: -8px;
+  z-index: 5;
+}
+
+.carRentalCards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.carRental {
+  background: #ffffff;
+  border: 1.5px solid #e5e7ea;
+  border-radius: 20px;
+  padding-top: 40px;
+  padding-left: 32px;
+  padding-bottom: 40px;
+  margin-bottom: 160px;
+}
+
+.carRental-texts h5 {
+  font-family: $MontserratMed;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 44px;
+  color: #000000;
+  margin-bottom: 10px;
+}
+
+.carRental-texts p {
+  width: 590px;
+  font-family: $MontserratReg;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #555555;
+  margin-bottom: 95px;
+}
+
+.carRental-card {
+  position: relative;
+  background: #f5f5f5;
+  border-radius: 16px;
+  padding: 15px;
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+}
+
+.icon1 {
+  position: absolute;
+  right: 20px;
+  width: 20px;
+}
+
+.carRental-card p {
+  font-family: $MontserratReg;
+  width: 170px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+  color: #000000;
+  margin-top: 55px;
+}
+
+/* Logo Slider */
+
+.logo-slider {
+  background: white;
+  -webkit-box-shadow: 0 0px 0px 0px rgba(0, 0, 0, 0.125);
+  box-shadow: 0 0px 0px 0px rgba(0, 0, 0, 0.125);
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  margin-bottom: 160px;
+}
+
+.logo-slider::before,
+.logo-slider::after {
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(white),
+    to(rgba(255, 255, 255, 0))
+  );
+  background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 100%);
+  content: "";
+  height: 175px;
+  position: absolute;
+  width: 200px;
+  z-index: 2;
+}
+
+.logo-slider::after {
+  right: 0;
+  top: 0;
+  -webkit-transform: rotateZ(180deg);
+  transform: rotateZ(180deg);
+}
+
+.logo-slider::before {
+  left: 0;
+  top: 0;
+}
+
+.logo-slider .logo-slide-track {
+  -webkit-animation: logo-scroll 60s linear infinite;
+  animation: logo-scroll 60s linear infinite;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: calc(250px * 14);
+  animation-duration: 30s;
+  animation-iteration-count: infinite;
+}
+
+.logo-slider .slide {
+  height: 150px;
+  width: 250px;
+  padding: 20px;
+}
+
+@-webkit-keyframes logo-scroll {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+
+  100% {
+    -webkit-transform: translateX(calc(-250px * 7));
+    transform: translateX(calc(-250px * 7));
+  }
+}
+
+@keyframes logo-scroll {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+
+  100% {
+    -webkit-transform: translateX(calc(-250px * 7));
+    transform: translateX(calc(-250px * 7));
+  }
+}
+
 // responsive
+
+@media only screen and (max-width: 1215px) {
+  .puple {
+    width: 300px;
+    top: 96px;
+  }
+}
+
+@media only screen and (max-width: 1035px) {
+  .carRental-texts p {
+    width: 447px;
+  }
+  .puple {
+    width: 300px;
+    top: 142px;
+  }
+  .carRental-card {
+    width: 150px;
+  }
+  .carRental-card p {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .carRental-texts p {
+    width: 360px;
+  }
+  .puple {
+    width: 290px;
+    top: 188px;
+  }
+  .carRental-card {
+    width: 130px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+  }
+  .carRental-card p {
+    width: 100%;
+    font-size: 13px;
+  }
+}
+
 @media only screen and (max-width: 995px) {
   .rent-cards__all-items {
     .rent-cards__fordFiesta {
@@ -201,6 +512,30 @@
       width: 100%;
     }
   }
+  .puple {
+    display: none;
+  }
+  .carRental-texts h5 {
+    width: 183px;
+    font-size: 24px;
+    line-height: 39px;
+  }
+  .carRentalCards {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .carRental-card {
+    width: 100%;
+  }
+  .unparalleled-texts p {
+    width: 100%;
+  }
+  .carRental-texts p {
+    width: 100%;
+  }
+  .carRental {
+    padding: 30px;
+  }
 }
 
 @media only screen and (max-width: 735px) {
@@ -217,11 +552,36 @@
   }
 }
 
+@media only screen and (max-width: 565px) {
+  .book-page {
+    width: 100%;
+    padding: 20px 22px;
+  }
+}
+
 @media only screen and (max-width: 515px) {
   .rent-cards {
     &__buttons-all {
       padding: 14px 20px;
     }
+  }
+}
+
+@media only screen and(max-width: 435px) {
+  .brands-slider p {
+    font-size: 20px;
+  }
+  .slide img {
+    width: 150px;
+  }
+  .rent-cards__all-items .rent-cards__fordFiesta {
+    width: 100%;
+    background: #f5f5f5;
+    border-radius: 16px;
+    padding: 25px 35px 25px 20px;
+  }
+  .book-page p {
+    width: 100%;
   }
 }
 
