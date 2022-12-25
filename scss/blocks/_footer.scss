@@ -52,3 +52,41 @@ span {
   line-height: 20px;
   color: #000000;
 }
+
+.allll {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+  flex-wrap: wrap;
+}
+
+.allList {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.link-all {
+  font-family: $MontserratMed;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #555555;
+}
+
+.link-all:hover {
+  text-decoration-line: underline;
+  color: #000000;
+}
+
+.allll p {
+  width: 195px;
+  font-family: $MontserratMed;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #000000;
+}

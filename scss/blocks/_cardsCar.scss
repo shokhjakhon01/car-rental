@@ -361,7 +361,7 @@
 /* Logo Slider */
 
 .logo-slider {
-  background: white;
+  background-color: #eeeeee;
   -webkit-box-shadow: 0 0px 0px 0px rgba(0, 0, 0, 0.125);
   box-shadow: 0 0px 0px 0px rgba(0, 0, 0, 0.125);
   margin: auto;
@@ -377,10 +377,14 @@
     linear,
     left top,
     right top,
-    from(white),
+    from(#eeeeee),
     to(rgba(255, 255, 255, 0))
   );
-  background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 100%);
+  background: linear-gradient(
+    to right,
+    #eeeeee 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
   content: "";
   height: 175px;
   position: absolute;
