@@ -5,8 +5,17 @@
 		@include display-main;
 		gap: 20px;
 
-        .nav{
-            display: block;
-        }
+		.nav {
+			&__list {
+				display: flex;
+				align-items: center;
+			}
+			&__item {
+				padding: 18px 16px;
+			}
+			&__link {
+				@include mainText()
+			}
+		}
 	}
 }

@@ -18,6 +18,15 @@ $breakpoints: (
 	xl: $xl,
 );
 
+// texts
+@mixin mainText($font,$style,$weight,$size,$height) {
+	font-family: $font;
+	font-style: $style;
+	font-weight: $weight;
+	font-size: $size;
+	line-height: $height;
+}
+
 // displays
 @mixin display-main {
 	display: flex;
