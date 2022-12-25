@@ -1,9 +1,9 @@
 const swiper = new Swiper(".swiper", {
   direction: "horizontal",
   loop: true,
-  autoplay: {
-    delay: 2000,
-  },
+  // autoplay: {
+  //   delay: 2000,
+  // },
 
 
   pagination: {
@@ -13,5 +13,8 @@ const swiper = new Swiper(".swiper", {
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
+  },
+  scrollbar: {
+    el: '.swiper-scrollbar',
   },
 });
