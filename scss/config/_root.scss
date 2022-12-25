@@ -1,0 +1,35 @@
+$sm: 576px;
+$md: 768px;
+$lg: 992px;
+$xl: 1200px;
+
+//- to container
+
+$col-sm: 540px;
+$col-md: 720px;
+$col-lg: 960px;
+$col-xl: 1140px;
+
+//breakpoints
+$breakpoints: (
+  sm: $sm,
+  md: $md,
+  lg: $lg,
+  xl: $xl,
+);
+
+// mixin for responsive
+@mixin media($size) {
+  @media screen and (max-width:#{$size}px) {
+    @content;
+  }
+}
+
+// mixin for container
+@mixin containermaker($breakpoint) {
+  @if map-has-key($breakpoints, $breakpoint) {
+    @media (min-width: #{map-get($breakpoints, $breakpoint)}) {
+      @content;
+    }
+  }
+}

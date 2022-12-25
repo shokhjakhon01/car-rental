@@ -1,0 +1,38 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: #000;
+}
+
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+
+  @include containermaker(sm) {
+    max-width: $col-sm;
+  }
+
+  @include containermaker(md) {
+    max-width: $col-md;
+  }
+
+  @include containermaker(lg) {
+    max-width: $col-lg;
+  }
+
+  @include containermaker(xl) {
+    max-width: $col-xl;
+  }
+}
