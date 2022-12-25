@@ -1,0 +1,98 @@
+let arr = [
+  {
+    title: "Ford Fiesta",
+    aboutCar: "Economy Car",
+    img: "../assets/images/compact-car-imgs/compact-Img-1.png",
+    category: ["compact"],
+  },
+  {
+    title: "Nissan Versa",
+    aboutCar: "Compact Car",
+    img: "../assets/images/compact-car-imgs/compact-Img-2.png",
+    category: ["compact"],
+  },
+  {
+    title: "Toyota Corolla",
+    aboutCar: "Mid-size Car",
+    img: "../assets/images/compact-car-imgs/compact-Img-3.png",
+    category: ["compact"],
+  },
+  {
+    title: "Nissan Rogue",
+    aboutCar: "Mid-size SUV",
+    img: "../assets/images/compact-car-imgs/compact-Img-4.png",
+    category: ["compact"],
+  },
+  {
+    title: "Chevy Traverse",
+    aboutCar: "Full-size SUV ",
+    img: "../assets/images/compact-car-imgs/compact-Img-5.png",
+    category: ["compact"],
+  },
+  {
+    title: "Nissan Altima",
+    aboutCar: "Full-size Car",
+    img: "../assets/images/compact-car-imgs/compact-Img-6.png",
+    category: ["compact"],
+  },
+  {
+    title: "Royce rolls ghost",
+    aboutCar: "Full-size Car",
+    img: "../assets/images/sport-car-imgs/sportCar-1.png",
+    category: ["sports"],
+  },
+  {
+    title: "Mercedes s class",
+    aboutCar: "Full-size Car",
+    img: "../assets/images/sport-car-imgs/sportCar-2.png",
+    category: ["sports"],
+  },
+  {
+    title: "Lamborghini urus",
+    aboutCar: "Mid-size Car ",
+    img: "../assets/images/sport-car-imgs/sportCar-3.png",
+    category: ["sports"],
+  },
+  {
+    title: "Mercedes g63 amg",
+    aboutCar: "Mid-size SUV",
+    img: "../assets/images/sport-car-imgs/sportCar-4.png",
+    category: ["sports"],
+  },
+  {
+    title: "15-Passenger Ford Transit ",
+    aboutCar: "Full-size Car ",
+    img: "../assets/images/vans-car-imgs/vans-1.png",
+    category: ["vans"],
+  },
+  {
+    title: "Chrysler Pacifica",
+    aboutCar: "Full-size Car",
+    img: "../assets/images/vans-car-imgs/vans-2.png",
+    category: ["vans"],
+  },
+  {
+    title: "Chevy Silverado 4500HD",
+    aboutCar: "Mid-size Car",
+    img: "../assets/images/vans-car-imgs/vans-3.png",
+    category: ["vans"],
+  },
+  {
+    title: "12-Passenger Ford Transit",
+    aboutCar: "Mid-size SUV",
+    img: "../assets/images/vans-car-imgs/vans-4.png",
+    category: ["vans"],
+  },
+  {
+    title: "15-Passenger Ford Transit ",
+    aboutCar: "Mid-size SUV ",
+    img: "../assets/images/vans-car-imgs/vans-5.png",
+    category: ["vans"],
+  },
+  {
+    title: "Mercedes-Benz Sprinter",
+    aboutCar: "Mid-size SUV",
+    img: "../assets/images/vans-car-imgs/vans-6.png",
+    category: ["vans"],
+  },
+];

@@ -15,24 +15,38 @@
             <a class="logo__block" href="index.html">
               <img
                 class="logo__img"
+                width="150"
+                height="40"
                 src="./assets/images/logo/logo.svg"
                 alt="website_logo"
               />
             </a>
           </div>
-          <nav class="main-nav">
-            <ul class="main-nav__list">
-              <a href=""></a>
-            </ul>
-            <ul class="main-nav__list">
-              About Us
-            </ul>
-            <ul class="main-nav__list">
-              Help center
+          <nav class="nav">
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a class="nav__link" href="#">Categories</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#">About Us</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#">Help center</a>
+              </li>
             </ul>
           </nav>
         </div>
-        <div class="header__rigth"></div>
+        <div class="header__rigth">
+          <a href="tel:+1 8554200000">+1 855 420 0000</a>
+          <div class="login">
+            <img
+              class="login__img"
+              src="./assets/images/icon-dark-mode-light-mode/light-mode-icon.svg"
+              alt="light mode icon"
+            />
+            <button class="login__button">Login</button>
+          </div>
+        </div>
       </header>
       <main>
         <section class="hero"></section>
@@ -63,10 +77,13 @@
                 </a>
               </div>
             </div>
+            <div class="rent-cards__all-items"></div>
           </div>
         </section>
       </main>
       <footer class="footer"></footer>
     </div>
+    <script src="scripts/objectCars.js"></script>
+    <script src="scripts/renderCars.js"></script>
   </body>
 </html>

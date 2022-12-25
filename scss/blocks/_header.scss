@@ -1,0 +1,22 @@
+.header {
+	@include display-main;
+
+	&__left {
+		@include display-main;
+		gap: 20px;
+
+		.nav {
+			&__list {
+				display: flex;
+				align-items: center;
+			}
+			&__item {
+				padding: 18px 16px;
+			}
+			&__link {
+				@include mainText($MontserratMed, normal, 500, 18px, 22px);
+				text-align: center;
+			}
+		}
+	}
+}
